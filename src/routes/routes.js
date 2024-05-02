@@ -8,7 +8,7 @@ import Login from '../components/auth/Login';
 import CreateContactPage from '../pages/CreateContactPage';
 import EditContactPage from '../pages/EditContactPage';
 import ContactsListPage from '../pages/ContactsListPage';
-import ContactDetailsPage from '../pages/ContactDetailsPage';
+import ContactDetails from '../components/contacts/ContactDetails';
 
 const AllPages = () => (
     <>
@@ -20,7 +20,7 @@ const AllPages = () => (
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/contacts/create" element={<CreateContactPage />}></Route>
                 <Route path="/contacts/:id/edit" element={<EditContactPage />}></Route>
-                <Route path="/contacts/:id" element={<ContactDetailsPage />}></Route>
+                <Route path="/contacts/:id" element={<ContactDetails />}></Route>
                 <Route path="/contacts" element={<ContactsListPage />}></Route>
             </Routes>
             <Footer />

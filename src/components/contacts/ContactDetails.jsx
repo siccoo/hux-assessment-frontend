@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ContactDetails = () => {
+const ContactDetails = ({ contact }) => {
   return (
     <div>
-      <h2>Contact Details</h2>
-      {/* Display contact details */}
+      <p>{contact.firstName} {contact.lastName}</p>
+      <p>{contact.phoneNumber}</p>
     </div>
   );
 };
