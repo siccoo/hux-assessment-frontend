@@ -3,8 +3,18 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="container">
+      <div className="container">
       <h2 className="mt-5">Welcome to MyWebApp</h2>
-      {/* Some useful information about the web app */}
+      <p className="lead">MyWebApp is a simple and intuitive web application for managing your contacts.</p>
+      <p>You can use MyWebApp to:</p>
+      <ul>
+        <li>Create and manage your contacts</li>
+        <li>Edit contact details</li>
+        <li>Delete contacts</li>
+        <li>View contact information</li>
+      </ul>
+      <p>Get started now by signing up or logging in to your account!</p>
+    </div>
     </div>
   );
 };
