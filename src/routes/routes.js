@@ -12,15 +12,15 @@ import ContactDetails from '../components/contacts/ContactDetails';
 import PrivateRoute from "./privateRoute";
 
 const AllPages = () => (
-    <>
-        <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/signup" element={<Signup />}></Route>
-                <Route path="/login" element={<Login />}></Route>
+  <>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/login" element={<Login />}></Route>
 
-                <Route
+        <Route
           path="/contacts"
           element={
             <PrivateRoute>
@@ -52,10 +52,10 @@ const AllPages = () => (
             </PrivateRoute>
           }
         ></Route>
-            </Routes>
-            <Footer />
-        </Router>
+      </Routes>
+      <Footer />
+    </Router>
 
-    </>
+  </>
 )
 export default AllPages;
