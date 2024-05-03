@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="container">
-      <h2 className="mt-5">Welcome to MyWebApp</h2>
+      <h2 className="mt-3">Welcome to MyWebApp</h2>
       <p className="lead">MyWebApp is a simple and intuitive web application for managing your contacts.</p>
       <p>You can use MyWebApp to:</p>
       <ul>
@@ -13,7 +13,7 @@ const Home = () => {
         <li>Delete contacts</li>
         <li>View contact information</li>
       </ul>
-      <p>Get started now by signing up or logging in to your account!</p>
+      <p className='mb-5'>Get started now by signing up or logging in to your account!</p>
     </div>
     </div>
   );
