@@ -9,6 +9,7 @@ import CreateContactPage from '../pages/CreateContactPage';
 import EditContactPage from '../pages/EditContactPage';
 import ContactsListPage from '../pages/ContactsListPage';
 import ContactDetails from '../components/contacts/ContactDetails';
+import PrivateRoute from "./privateRoute";
 
 const AllPages = () => (
     <>
@@ -18,10 +19,39 @@ const AllPages = () => (
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/signup" element={<Signup />}></Route>
                 <Route path="/login" element={<Login />}></Route>
-                <Route path="/contacts/create" element={<CreateContactPage />}></Route>
-                <Route path="/contacts/:id/edit" element={<EditContactPage />}></Route>
-                <Route path="/contacts/:id" element={<ContactDetails />}></Route>
-                <Route path="/contacts" element={<ContactsListPage />}></Route>
+
+                <Route
+          path="/contacts"
+          element={
+            <PrivateRoute>
+              <ContactsListPage />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/contacts/create"
+          element={
+            <PrivateRoute>
+              <CreateContactPage />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/contacts/:id/edit"
+          element={
+            <PrivateRoute>
+              <EditContactPage />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/contacts/:id"
+          element={
+            <PrivateRoute>
+              <ContactDetails />
+            </PrivateRoute>
+          }
+        ></Route>
             </Routes>
             <Footer />
         </Router>
