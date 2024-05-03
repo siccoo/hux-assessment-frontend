@@ -9,8 +9,8 @@ const CreateContactPage = ({ onSubmit }) => {
   };
 
   return (
-    <div>
-      <h2>Create Contact</h2>
+    <div className="container mt-5">
+      <h2 className="mb-4">Create Contact</h2>
       <ContactForm initialValues={initialValues} onSubmit={onSubmit} />
     </div>
   );

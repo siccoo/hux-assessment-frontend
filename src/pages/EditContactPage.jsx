@@ -11,8 +11,8 @@ const EditContactPage = ({ contact, onSubmit }) => {
   }, [contact]);
 
   return (
-    <div>
-      <h2>Edit Contact</h2>
+    <div className="container mt-5">
+      <h2 className="mb-4">Edit Contact</h2>
       <ContactForm initialValues={formData} onSubmit={onSubmit} />
     </div>
   );
