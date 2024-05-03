@@ -5,6 +5,15 @@
 - [node](https://nodejs.org/en/download/)
 - [Yarn](https://github.com/yarnpkg/yarn.) or [npm](https://github.com/npm/cli/)
 
+## Frontend Technologies Used
+
+- React
+- JavaScript
+- React Router Dom
+- Axios
+- JWT-Decode
+- Bootstrap
+
 #### Installation:
 
 ```
